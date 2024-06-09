@@ -27,7 +27,7 @@ const respons = await inquirer.prompt([
   {
     type: "input",
     name: "userInput",
-    message: chalk.blue.bold("Please enter the Amount of second"),
+    message: chalk.blue.bold("Please enter the Amount of second:"),
     validate: (input) => {
       if (isNaN(input)) {
         return chalk.red.bold("please enter valid number");
